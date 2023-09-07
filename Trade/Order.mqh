@@ -44,7 +44,8 @@ private:
    static ENUM_SYMBOL_INFO_DOUBLE ST[2];
    static ENUM_SYMBOL_INFO_DOUBLE ET[2];
    static int        DT[2];
-   int               st,et,d;
+   ENUM_SYMBOL_INFO_DOUBLE               st,et;
+   int d;
 protected:
    string            symbol;
    int               type;
