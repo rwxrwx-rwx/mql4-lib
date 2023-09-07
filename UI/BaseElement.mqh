@@ -96,6 +96,7 @@ public:
    bool              isVisibleOn(long flag) const {return(getVisibility()&flag)==flag;}
    bool              setVisibleOn(long flag) {return setVisibility(getVisibility()|flag);}
    bool              setInvisibleOn(long flag) {return setVisibility(getVisibility()&(~flag));}
+   bool              destroy() { return deleteSelf(); }
 
    virtual int       getX() const {return 0;}
    virtual int       getY() const {return 0;}
